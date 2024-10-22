@@ -1,0 +1,14 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = "masterTemplate.cshtml";
+}
+<!-- Main content -->
+@Model.Value("bodyText")
+
+<div class="myClass1">Detta är inuti en Div tag</div>
+<div class="myClass2">Detta är inuti Div-tag 2</div>
+
+<p>Artikel skriven av @Model.Value("author")</p>
+
+<div>@Model.Value("copyright")</div>

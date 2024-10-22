@@ -1,0 +1,17 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = "masterTemplate.cshtml";
+}
+
+<h1>About @Model.Value("aboutName")</h1>
+
+<div>
+	<!-- <img src="@Model.Value("image")" alt="En bild"> -->
+	<img src="/media/gdprImage.png" alt="En bild">
+</div>
+
+<!-- Main content -->
+<div id="content">
+	@Model.Value("description")
+</div>

@@ -1,0 +1,31 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="/css/mainDesign.css">
+	</head>
+	<body>
+		<h1>@Model.Value("pageTitle")</h1>
+        <nav>
+			<ul>
+			<li><a href="/">Startsida</a></li>
+            <li><a href="/about-webpage/">About</a></li>
+            <li><a href="http://aftonbladet.se">Aftonbladet</a></li>
+			</ul>
+		</nav>
+
+        <div class="content">
+            <!-- Här kommer local Template in -->
+            @RenderBody()
+        </div>
+		
+	</body>
+</html>
